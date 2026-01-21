@@ -1,20 +1,22 @@
-name : First Workflow
+name: First Workflow
 
 on: push
 
-jobs: 
-    first_job: 
+jobs:
+    first_job:
         runs-on: ubuntu-latest
-        steps: 
+        steps:
             - name: Checkout
               uses: actions/checkout@v4
 
             - name: Welcome
               run: echo " Welcome"
 
-            - name: list files
-              run : ls
+            - name: List files
+              run: ls
 
-            - name : Read file 
-              run : cat README.md
-    
+            - name: Read file
+              run: cat README.md
+
+            - name: Generate ASCII Artwork
+              run: echo "ASCII Art"
