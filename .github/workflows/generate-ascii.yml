@@ -11,7 +11,7 @@
               uses: actions/checkout@v4
 
             - name: Install Cowsay Program
-              run: Sudo apt-get install cowsay -y
+              run: sudo apt-get install cowsay -y
 
             - name: Execute Cwosay CMD
               run: cowsay -f dragon " Run for Cover" >> dragon.txt
